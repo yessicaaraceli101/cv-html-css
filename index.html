@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta de Presentación</title>
+    <style>
+        /* Reset de margen y padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #77FF77, #B2EACD); /* Degradado de fondo */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            background-color: #ffffff; /* Color de fondo blanco para la tarjeta */
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Sombra pronunciada */
+            padding: 30px;
+            max-width: 350px;
+            width: 100%;
+            text-align: center; /* Centra el texto */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para hover */
+            border: 2px solid #77FF77;
+        }
+
+        .card:hover {
+            transform: scale(1.1); /* Aumenta la escala de la tarjeta al pasar el mouse */
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); /* Sombra más intensa y profunda */
+            border-color: #34D399; /* Cambia el color del borde al hacer hover */
+        }
+
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 4px solid #77FF77;
+            transition: border-color 0.3s ease; /* Transición suave para el borde */
+        }
+
+        .profile-img:hover {
+            border-color: #34D399; /* Cambio de color del borde al pasar el mouse */
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 24px;
+            text-transform: uppercase; /* Texto en mayúsculas */
+            letter-spacing: 1px;
+        }
+
+        p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 10px 0;
+            padding: 10px;
+            transition: color 0.3s ease; /* Transición para el color del texto */
+        }
+
+        p:hover {
+            color: #000; /* Color más oscuro al pasar el mouse */
+        }
+
+        strong {
+            color: #000000;
+        }
+
+        a {
+            color: #007BFF; /* Color del enlace */
+            text-decoration: none;
+            transition: color 0.3s ease; /* Transición para el enlace */
+        }
+
+        a:hover {
+            text-decoration: underline; /* Subrayar el enlace en hover */
+            color: #0056b3; /* Color más oscuro al pasar el mouse */
+        }
+    </style>
+</head>
+<body>
+    <!-- Contenido de la tarjeta -->
+    <div class="card">
+        <img src="C:\Users\lopez\Documents\IMG_20240616_165355_679.jpg" alt="YESSICA LOPEZ" class="profile-img">
+        <h1>MI TARJETA DE PRESENTACIÓN</h1>
+        <p><strong>Nombre:</strong> Yessica Araceli Lopez Ramirez.</p>
+        <p><strong>Profesión:</strong> Ingeniera Informática.</p>
+        <p><strong>Descripción:</strong> Me considero una persona responsable, proactiva, puntual, disciplinada con mucha fuerza de voluntad.</p>
+        <p><strong>Email:</strong> <a href="mailto:lopezyessica824@gmail.com">lopezyessica824@gmail.com</a></p>
+        <p><strong>Teléfono:</strong> (0983) 957 615</p>
+    </div>
+</body>
+</html>
