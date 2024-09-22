@@ -12,9 +12,6 @@
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     font-family: 'Open Sans', sans-serif;
     background-color: var(--bg-color-light);
     color: var(--text-color-light);
@@ -23,40 +20,40 @@ body {
     line-height: 1.6;
 }
 
+h1, h2 {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px;
+}
+
 header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: #e2e2e2;
     text-align: center;
     padding: 20px;
-}
-
-.contact-info, .experiencia, .educacion, .habilidades {
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-    width: 90%;
-    max-width: 800px; /* Limitar el ancho máximo */
+    border-bottom: 4px solid var(--button-color);
 }
 
 .profile-photo {
     width: 150px; /* Ajusta el tamaño según necesites */
     border-radius: 50%; /* Para que sea redonda */
     border: 2px solid #ddd; /* Un borde gris claro */
-    margin-bottom: 10px; /* Espacio debajo de la imagen */
 }
 
-h1, h2 {
-    font-family: 'Roboto', sans-serif;
+.description {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: justify;
 }
 
-h1 {
-    color: var(--button-color);
+.contact-info, .experiencia, .educacion, .habilidades {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f4; /* Fondo claro para secciones */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
 
 h2 {
-    color: #007bff; /* Color para los subtítulos */
+    color: var(--button-color);
 }
 
 ul {
@@ -65,27 +62,67 @@ ul {
 }
 
 ul li {
-    background-color: #f4f4f4;
+    background-color: #f9f9f9;
     padding: 10px;
     margin-bottom: 10px;
     border-left: 5px solid var(--button-color);
-    transition: background-color 0.3s; /* Añadir efecto al hover */
+    transition: background-color 0.3s; /* Suave transición al pasar el mouse */
 }
 
 ul li:hover {
-    background-color: #e2e2e2; /* Cambiar color al pasar el ratón */
+    background-color: #eaeaea; /* Color de fondo al pasar el mouse */
+}
+
+a {
+    color: var(--button-color);
+    text-decoration: none; /* Sin subrayado */
+}
+
+a:hover {
+    text-decoration: underline; /* Subrayar al pasar el mouse */
+}
+
+button {
+    display: block;
+    background-color: var(--button-color);
+    color: #fff;
+    padding: 10px 20px;
+    margin: 20px auto;
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Suave transición */
+}
+
+button:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el mouse */
 }
 
 footer {
     background-color: #e2e2e2;
     padding: 10px;
     text-align: center;
+    border-top: 4px solid var(--button-color);
 }
 
 footer a {
     color: var(--button-color);
     font-weight: bold;
-    text-decoration: underline; /* Resaltar el enlace */
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    header, footer {
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+        margin: 20px 0;
+    }
 }
 
 /* Estilos para el tema oscuro */
@@ -110,23 +147,4 @@ footer a {
 .dark-theme footer {
     background-color: var(--footer-bg-color-dark);
     color: var(--footer-text-color-dark);
-}
-
-@media screen and (max-width: 768px) {
-    body {
-        font-size: 14px;
-    }
-
-    header, footer {
-        padding: 15px;
-    }
-    
-    .contact-info, .experiencia, .educacion, .habilidades {
-        width: 100%; /* Asegurarse que ocupa todo el ancho en pantallas pequeñas */
-    }
-
-    button {
-        width: 100%; /* Botón ocupa todo el ancho en pantallas pequeñas */
-        margin: 20px 0;
-    }
 }
