@@ -31,10 +31,9 @@ header {
 }
 
 .profile-photo {
-    width: 150px;
-    height: auto;
-    border-radius: 50%;
-    margin-bottom: 15px;
+    width: 150px; /* Ajusta el tamaño según necesites */
+    border-radius: 50%; /* Para que sea redonda */
+    border: 2px solid #ddd; /* Un borde gris claro */
 }
 
 .description {
