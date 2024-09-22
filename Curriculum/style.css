@@ -1,0 +1,100 @@
+/* Variables CSS para los temas */
+:root {
+    --bg-color-light: #f9f9f9; /* Fondo claro */
+    --text-color-light: #333333; /* Texto oscuro para fondo claro */
+    --bg-color-dark: #333333; /* Fondo oscuro */
+    --text-color-dark: #000000; /* Texto claro para fondo oscuro */
+    --button-color: #007bff; /* Color del botón */
+    --footer-bg-color-light: #007bff; /* Fondo del footer en modo claro */
+    --footer-bg-color-dark: #0056b3; /* Fondo del footer en modo oscuro */
+    --footer-text-color-light: #ffffff; /* Texto del footer en modo claro */
+    --footer-text-color-dark: #ffffff; /* Texto del footer en modo oscuro */
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--bg-color-light);
+    color: var(--text-color-light);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #e2e2e2;
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-photo {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.description {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.contact-info, .experiencia, .educacion, .habilidades {
+    margin: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 5px solid var(--button-color);
+}
+
+a {
+    color: var(--button-color);
+}
+
+button {
+    display: block;
+    background-color: var(--button-color);
+    color: #fff;
+    padding: 10px 20px;
+    margin: 20px auto;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #e2e2e2;
+    padding: 10px;
+    text-align: center;
+}
+
+footer a {
+    color: var(--button-color);
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    header, footer {
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
