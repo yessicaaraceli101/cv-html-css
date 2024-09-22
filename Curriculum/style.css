@@ -1,3 +1,93 @@
+/* Variables CSS para los temas */
+:root {
+    --bg-color-light: #f9f9f9; /* Fondo claro */
+    --text-color-light: #333333; /* Texto oscuro para fondo claro */
+    --bg-color-dark: #333333; /* Fondo oscuro */
+    --text-color-dark: #ffffff; /* Texto claro para fondo oscuro */
+    --button-color: #007bff; /* Color del botón */
+    --footer-bg-color-light: #007bff; /* Fondo del footer en modo claro */
+    --footer-bg-color-dark: #0056b3; /* Fondo del footer en modo oscuro */
+    --footer-text-color-light: #ffffff; /* Texto del footer en modo claro */
+    --footer-text-color-dark: #ffffff; /* Texto del footer en modo oscuro */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--bg-color-light);
+    color: var(--text-color-light);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e2e2e2;
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-info, .experiencia, .educacion, .habilidades {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    width: 90%;
+    max-width: 800px; /* Limitar el ancho máximo */
+}
+
+.profile-photo {
+    width: 150px; /* Ajusta el tamaño según necesites */
+    border-radius: 50%; /* Para que sea redonda */
+    border: 2px solid #ddd; /* Un borde gris claro */
+    margin-bottom: 10px; /* Espacio debajo de la imagen */
+}
+
+h1, h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    color: var(--button-color);
+}
+
+h2 {
+    color: #007bff; /* Color para los subtítulos */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 5px solid var(--button-color);
+    transition: background-color 0.3s; /* Añadir efecto al hover */
+}
+
+ul li:hover {
+    background-color: #e2e2e2; /* Cambiar color al pasar el ratón */
+}
+
+footer {
+    background-color: #e2e2e2;
+    padding: 10px;
+    text-align: center;
+}
+
+footer a {
+    color: var(--button-color);
+    font-weight: bold;
+    text-decoration: underline; /* Resaltar el enlace */
+}
+
 /* Estilos para el tema oscuro */
 .dark-theme {
     background-color: var(--bg-color-dark);
@@ -20,4 +110,23 @@
 .dark-theme footer {
     background-color: var(--footer-bg-color-dark);
     color: var(--footer-text-color-dark);
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    header, footer {
+        padding: 15px;
+    }
+    
+    .contact-info, .experiencia, .educacion, .habilidades {
+        width: 100%; /* Asegurarse que ocupa todo el ancho en pantallas pequeñas */
+    }
+
+    button {
+        width: 100%; /* Botón ocupa todo el ancho en pantallas pequeñas */
+        margin: 20px 0;
+    }
 }
